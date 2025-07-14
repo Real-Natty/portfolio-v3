@@ -110,7 +110,7 @@ footer {
   bottom: 0;
   left: 0;
 }
-footer::before {
+/* footer::before {
   content: "";
   position: absolute;
   left: 0;
@@ -119,7 +119,7 @@ footer::before {
   height: 1px;
   width: 100%;
   background: #afafb6;
-}
+} */
 footer .content {
   max-width: 1250px;
   margin: auto;
@@ -186,6 +186,8 @@ footer .content .top {
   background-color: #ffffff;
 }
 footer .content .link-boxes {
+  padding-top: 15px;
+  border: 2px solid red;
   width: 100%;
   display: flex;
   justify-content: space-between;
