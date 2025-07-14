@@ -187,7 +187,7 @@ footer .content .top {
 }
 footer .content .link-boxes {
   padding-top: 15px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
   display: flex;
   justify-content: space-between;
