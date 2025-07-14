@@ -27,6 +27,7 @@ nav .menu {
   font-weight: 600;
 }
 .menu ul {
+  padding-top: 5px;
   display: inline-flex;
   margin-left: 15px;
   list-style: none;
@@ -82,15 +83,15 @@ nav .menu {
   margin-top: 35px;
 }
 .center .btns button {
-  height: 55px;
-  width: 170px;
+  height: 50px;
+  width: 100px;
   border-radius: 5px;
   border: none;
   margin: 0 10px;
   border: 2px solid #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
-  padding: 0 10px;
+  padding: 0 5px;
   cursor: pointer;
   outline: none;
   transition: all 0.3s ease;
@@ -269,6 +270,7 @@ footer .bottom-details .bottom-text {
   max-width: 1250px;
   margin: auto;
   padding: 20px 40px;
+  color: #d6d1d1;
   display: flex;
   justify-content: space-between;
 }
@@ -319,7 +321,7 @@ footer .bottom-details .bottom-text a {
 
   footer .bottom-details .bottom-text span,
   footer .bottom-details .bottom-text a {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 @media (max-width: 520px) {
@@ -340,25 +342,16 @@ footer .bottom-details .bottom-text a {
     width: 100%;
   }
 }
-.logout-btn {
-  text-align: center;
-  padding: 2px;
-}
-.logout-btn button {
-  padding: 5px;
-  border-radius: 5px;
-  background: linear-gradient(#8f6bfc, #b7b2df);
-  transition: all 0.2s ease-in-out;
-}
-.logout-btn button a {
+
+footer .bottom-details .policy-terms a {
+  color: #ccc;
   text-decoration: none;
+  padding-bottom: 5px;
+  margin-right: 50px;
+  font-size: 10px;
+  transition: all 0.5s ease-in;
+}
+footer .bottom-details .policy-terms a:hover {
+  text-decoration: underline;
   font-size: 15px;
-  font-weight: 600;
-}
-.logout-btn button:hover {
-  background: linear-gradient(#b7b2df, #744ceb);
-  transform: scale(1.1);
-}
-.bottom-details .bottom-text .copyright-text {
-  color: #fff;
 }
