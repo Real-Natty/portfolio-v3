@@ -65,3 +65,13 @@ nav .menu {
   padding: 0 20px;
   text-align: center;
 }
+.center .title {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 500;
+}
+.center .sub-title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 500;
+}
