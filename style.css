@@ -49,3 +49,19 @@ nav .menu {
   width: 100%;
   background-position: center;
 }
+.img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background: rgba(255, 0, 0, 0.4); */
+}
+.center {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  text-align: center;
+}
