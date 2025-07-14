@@ -106,3 +106,24 @@ footer {
   bottom: 0;
   left: 0;
 }
+footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #afafb6;
+}
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 15px 20px 20px 20px;
+}
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
