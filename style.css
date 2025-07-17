@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 nav {
   position: fixed;
   background: #000;
@@ -12,7 +13,7 @@ nav {
   z-index: 100;
 }
 nav .menu {
-  max-width: 1250px;
+  max-width: 10240px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -20,6 +21,7 @@ nav .menu {
   padding: 0 20px;
   list-style: none;
 }
+
 .menu .logo a {
   text-decoration: none;
   color: #fff;
@@ -47,18 +49,19 @@ nav .menu {
   color: #000;
   cursor: pointer;
 }
+
 .img {
   background: url(pexels-sharath-giri-77553-3849160.jpg) no-repeat;
   height: 100vh;
   width: 100%;
   background-position: center;
+  object-fit: cover;
 }
 .img::before {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background: rgba(255, 0, 0, 0.4); */
 }
 .center {
   position: absolute;
@@ -104,6 +107,36 @@ nav .menu {
   background: #fff;
   color: #000;
 }
+/* container= .about-sect,class=about,  */
+.about-sect {
+  border: 2px solid blue;
+  color: #fff;
+}
+.about-sect h3 {
+  background: #000;
+  text-align: center;
+}
+.about-sect .img {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.about-sect .img .image {
+  border: 2px solid yellow;
+  flex: 1;
+}
+.about-sect .img .image img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.about-sect .img .para {
+  flex: 1;
+}
+.about-sect .about {
+}
 footer {
   background: linear-gradient(#140b5c, #111014);
   width: 100%;
@@ -120,8 +153,9 @@ footer {
   width: 100%;
   background: #afafb6;
 } */
+
 footer .content {
-  max-width: 1250px;
+  max-width: 1050px;
   margin: auto;
   padding: 15px 20px 20px 20px;
 }
@@ -302,6 +336,9 @@ footer .bottom-details .bottom-text a {
   }
 }
 @media (max-width: 700px) {
+  .image-container img {
+    width: 100%;
+  }
   footer {
     position: relative;
   }
@@ -356,4 +393,126 @@ footer .bottom-details .policy-terms a {
 footer .bottom-details .policy-terms a:hover {
   text-decoration: underline;
   font-size: 15px;
+}
+
+/* about css */
+.about-section {
+  margin: 3rem auto;
+  width: 100%;
+}
+
+.about-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.image-article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.image-article-container .image-container {
+}
+
+.image-container img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.image-article-container .article-container {
+  width: 50%;
+  padding: 1rem;
+}
+
+.article-container h4 {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 760px) {
+  .image-article-container .article-container {
+    width: 100%;
+  }
+}
+/* @media (min-width: 320px) {
+  footer .content .link-boxes {
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box {
+    width: 40%;
+    margin-top: 10px;
+  }
+} */
+.service-section h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.service-section .service-policy-board h4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+/* .service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+  text-decoration: none;
+  /* border: 2px solid red; 
+} */
+.service-lists {
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+/* .services .html-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  /* border: 2px solid red; 
+} */
+ul {
+  /* width: 50%; */
+  padding: 2rem;
+  list-style: none;
+  text-decoration: none;
+  /* border: 2px solid blue; */
+}
+/* @media (max-width: 760px) {
+  ul {
+    width: 100%;
+  }
+} */
+ul li {
+  padding-top: 1rem;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+
+  color: #1b1b1b;
+  /* border: 2px solid red; */
+}
+ul div h3 {
+  text-transform: capitalize;
+  color: #0b4747;
+
+  /* border: 2px solid green; */
+  list-style: none;
+}
+.policy-section .service-policy-sect ul li {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.service-policy-sect .policy-head h4 {
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 8px;
 }
